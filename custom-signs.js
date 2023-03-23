@@ -53,5 +53,6 @@ export function graduationFor(name, year) {
  */
 
 export function costOf(sign, currency) {
-  throw new Error('Implement the costOf function');
+  const cost = 20 + (sign.length * 2);
+  return `Your sign costs ${cost.toFixed(2)} ${currency}.`;
 }
